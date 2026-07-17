@@ -1,0 +1,47 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.about-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #4a3fff;
+  margin-bottom: 14px;
+}
+
+.about-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cert-list li {
+  color: #444;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  background: #f5f4ff;
+  border-radius: 6px;
+  border-left: 3px solid #4a3fff;
+  border-right: 3px solid #4a3fff;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

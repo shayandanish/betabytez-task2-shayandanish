@@ -1,0 +1,50 @@
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  text-align: left;
+  padding: 24px;
+  background: linear-gradient(134deg, #f5f4ff 0%, #fafafa 100%);
+  flex-wrap: wrap-reverse;
+}
+
+.hero-content {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-image img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(74, 63, 255, 0.2);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin-bottom: 16px;
+  color: #4a3fff;
+}
+
+.highlight {
+  color: #4a3fff;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.github-summary {
+  margin-top: 16px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.dark-theme .tagline,
+.dark-theme .github-summary {
+  color: #c8c8d8;
+}
