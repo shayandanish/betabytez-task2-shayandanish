@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background-color: #f5f4ff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Noto Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  padding: 80px 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #1a1a2e;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.btn-primary {
+  background-color: #4a3fff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #4a3fff;
+  border: 2px solid #4a3fff;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(74, 63, 255, 0.25);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- Dark theme ---- */
+.dark-theme {
+  background-color: #1a1a2e;
+  color: #f5f4ff;
+}
+
+.dark-theme .section-title {
+  color: #f5f4ff;
+}
+
+.dark-theme .navbar {
+  background: #16162aee;
+  border-bottom-color: #2a2a45;
+}
+
+.dark-theme .about-card,
+.dark-theme .skill-card,
+.dark-theme .project-card {
+  background: #22223a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .cert-list li {
+  background: #2a2a45;
+  color: #e0e0f0;
+}
+
+.dark-theme .project-card h3 {
+  color: #f5f4ff;
+}
+
+.dark-theme .about-card p,
+.dark-theme .project-card p {
+  color: #c8c8d8;
+}
+
+.dark-theme .form-group input,
+.dark-theme .form-group textarea {
+  background: #22223a;
+  border-color: #2a2a45;
+  color: #f5f4ff;
+}
+
+.dark-theme .hero {
+  background: linear-gradient(134deg, #1a1a2e 0%, #16162a 100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 56px 16px;
+  }
+}
