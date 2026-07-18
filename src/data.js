@@ -3,7 +3,7 @@
 export const profile = {
   name: "Shayan Danish",
   tagline: "Full-Stack Developer | Blockchain Enthusiast",
-  githubUsername: "YOUR_GITHUB_USERNAME", // <-- replace this
+  
 };
 
 export const about = {
